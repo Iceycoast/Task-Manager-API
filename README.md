@@ -36,6 +36,18 @@ The system exposes a REST API for creating, reading, updating, and deleting task
 
 ---
 
+## API Documentation
+
+The API documentation and testing resources are available below:
+
+- **Swagger UI:** http://localhost:8000/docs
+- **OpenAPI Specification:** [docs/openapi.json](docs/openapi.json)
+- **Postman Collection:** [docs/task-api.postman_collection.json](docs/task-api.postman_collection.json)
+
+The Postman collection can be imported directly to test all authentication and task endpoints.
+
+---
+
 ## API Endpoints
 
 Base URL (local): `http://localhost:8000`. All task endpoints require a valid JWT in the `Authorization` header.
