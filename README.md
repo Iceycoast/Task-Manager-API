@@ -20,6 +20,18 @@ The system exposes a REST API for creating, reading, updating, and deleting task
 
 ---
 
+## Frontend Screenshots
+
+| Login | Create Task |
+|-------|-------------|
+| ![Login](assets/Login.png) | ![Create Task](assets/Create_Task.png) |
+
+| View Tasks | Edit Task |
+|------------|-----------|
+| ![View Tasks](assets/View_Task.png) | ![Edit Task](assets/Edit_Task.png) |
+
+---
+
 ## Architecture
 
 **Backend:** Request flow is **routes → service → database**. Route handlers validate input and depend on `get_current_user` for protected endpoints. Service functions contain business logic and call the shared DB helper; all task queries filter by `user_id` so users cannot access or modify other users’ tasks.
